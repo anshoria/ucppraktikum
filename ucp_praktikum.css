@@ -7,6 +7,13 @@
   font-size: 6em;
 }
 
+.hero-left {
+  background-repeat: no-repeat;
+  padding-left: 18px !important;
+  background-size: 20%;
+  background-position-y: 20%;
+}
+
 
       
 .footer{
