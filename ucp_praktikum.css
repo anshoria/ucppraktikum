@@ -6,16 +6,7 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
-.header {
-  margin: 0 15px;
-  overflow: hidden; }
-  .header .logo {
-    float: left; }
-    .header .logo h1 {
-      font-family: 'MuseoModerno', cursive; }
-      .header .logo h1 a {
-        color: black;
-        text-decoration: none; }
+
   .header .menu {
     float: right; }
     .header .menu ul {
