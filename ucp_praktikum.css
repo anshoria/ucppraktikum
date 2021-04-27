@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0; }
 
+.header_nav {
+  position: fixed;
+}
 
 .hero {
   margin: 0 15px;
