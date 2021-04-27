@@ -1,31 +1,6 @@
-.hero {
-  margin: 0 15px;
-  overflow: hidden; }
-  .hero .heroleft {
-    float: left;
-    width: 60%; }
-    .hero .heroleft h2 {
-      font-weight: 600;
-      font-size: 6em;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 10px; }
-    .hero .heroleft p {
-      line-height: 2em; }
-    .hero .heroleft a {
-      background: #333;
-      color: #fff;
-      padding: 20px 30px;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.5s; }
-      .hero .heroleft a:hover {
-        background: #000; }
-  .hero .heroright {
-    float: right;
-    width: 40%; }
-    .hero .heroright img {
-      width: 100%; }
+.hero-banner{
+  margin: 20cm; 
+}
       
 .footer{
   height: 50px;
