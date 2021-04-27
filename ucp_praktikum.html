@@ -1,287 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" 
 
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-		<link rel="stylesheet" href="ucp_praktikum.css" />
+    <link rel="stylesheet" href="praktikum_bootstrap.css">
+    <title>UCP Praktikum</title>
 
-		<title>Muhammad Anshori Akbar</title>
-	</head>
-	<body>
+  </head>
 
-	
+  <body>
 
-		<!-- navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="#">KlikPizza</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">   
-							<a class="nav-link active" aria-current="page" href="#">Beranda</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#tentang">Tentang</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#penawaran">Layanan</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#menu">Menu</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#kontak">kontak Kami</a>
-						</li>
-						<li class="nav-item">
-                    <button class="btn btn-link" onclick="myFunction()"><img src="bulan.jpg" alt="" style="width: 20px;height: 20px;"></button>
-                  </li>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- akhir navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Praktikum Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#page">Beranda</a>
+              <a class="nav-link" href="#tentang">Tentang</a>
+              <a class="nav-link" href="#layanan">Layanan</a>
+              <a class="nav-link" href="#menu">Menu</a>
+              <a class="nav-link" href="#kontak">Kontak Kami</a>
+              <img class="nav-item" src="bulan.jpg" alt="darkBtn" id="darkBtn" onclick="darkmode()">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script>
+      function setDarkMode(isDark) {
+        var image = document.getElementById("darkBtn");
+        var element = document.body;
+        if (image.src.match("darkBtn")) {
+          image.src = "Light.png";
+          element.classList.toggle("dark-mode");
+        } else {
+          image.src = "bulan.jpg";
+          element.classList.toggle("light-mode");
+        }
+      }
+    </script>
 
-		<!-- header -->
-		<section id="header">
-			<div class="container">
-				<div class="row justify-content-center mt-5">
-					<div class="col-md-4 align-self-center">
-						<p style="font-weight: bold; color: #198754; font-size: 60px">Pizza Tasty</p>
-						<p class="fs-3" style="font-weight: bold">Cobain Pizza terlaris minggu ini.</p>
-						<button type="button" class="btn btn-success"><a href="#menu" style="text-decoration: none; color: white;">Lihat Menu</a></button>
-					</div>
-					<div class="col-md-4 mt-5">
-						<img src="/images/home.png" alt="home" width="400" />
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- akhir header -->
+    <section id="beranda">
+      <div class="container">
+          <div class="row justify-content-center mt-5">
+              <div class="col-md-4 align-self-center">  
+                  <h1 class="text-success" style="font-size: 60px;"> 
+                      Pizza Tasty
+                  </h1>
+                  <p style="font-weight: bold;">
+                      Cobain Pizza terlaris minggu ini.
+                  </p>
+                  <button type="button" class="btn btn-success text-white">Lihat Menu</button>
+              </div>
+              <div class="col-md-4 mt-5">
+                  <img src="home.png" style="object-fit: cover; height: 400px;">
+              </div>
+          </div>
+      </div>
+    </section>
 
-		<!-- tentang kami -->
-		<section id="tentang">
-			<div class="container">
-				<div class="row justify-content-evenly mt-5">
-					<div class="col-lg-4">
-						<img src="images/about.jpg" alt="" width="400" style="border-radius: 5%" />
-					</div>
-					<div class="col-lg-4 mt-5">
-						<p style="font-weight: bold; color: #198754">Tentang kami</p>
-						<h3 style="font-weight: bold">Kami menyediakan berbagai makanan enak</h3>
-						<p>kami memasak makanan terbaik di seluruh kota, dengan layanan pelanggan yang sangat baik, makanan terbaik dan dengan harga terbaik, kunjungi kami.</p>
-						<button type="button" class="btn btn-success">Explore history</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- akhir tentang kami -->
+    <section id="tentang">
+      <div class="container">
+          <div class="row justify-content-evenly mt-5">
+              <div class="col-lg-4">
+                  <img src="about.jpg" alt="" style="border-radius: 3%;" height="400px">
+              </div>
+              <div class="col-lg-4 mt-5">
+                  <p class="text-success">
+                      Tentang Kami
+                  </p>
+                  <h3 style="font-weight: bold;">
+                      Kami menyediakan berbagai makanan enak
+                  </h3>
+                  <p>
+                      Kami memasak makanan terbaik di seluruh kota, dengan layanan pelanggan yang sangat baik, makanan terbaik dan dengan harga terbaik, kunjungi kami
+                  </p>
+                  <button type="button" class="btn btn-success text-white">Explore history</button>
+              </div>
+          </div>
+      </div>
+    </section>
+    
 
-		<!-- penawaran -->
-		<section id="penawaran">
-			<div class="container">
-				<div class="row mt-5">
-					<div class="col text-center">
-						<p style="font-weight: bold; color: #198754">Penawaran</p>
-						<h3 style="font-weight: bold">Our amazing service</h3>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-md-4">
-						<img src="images/dish.svg" alt=""/>
-						<p style="font-weight: bold">Makanan enak</p>
-						<p>kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun,
-              dengan makanan terbaik dan lezat di kota.</p>
-					</div>
-					<div class="col-md-4">
-						<img src="images/pizza.svg" alt=""/>
-						<p style="font-weight: bold">Makanan cepat saji</p>
-						<p>kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun,
-              dengan makanan terbaik dan lezat di kota.</p>
-					</div>
-					<div class="col-md-4">
-						<img src="images/truck.svg" alt=""/>
-						<p style="font-weight: bold">Pesan Antar</p>
-						<p>kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun,
-              dengan makanan terbaik dan lezat di kota.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- akhir penawaran -->
+    <section>
+      <section id="layanan">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col text-center">
+              <p class="text-success" style="font-weight: bold;">Penawaran</p>
+              <h3 style="font-weight: bold">Our amazing service</h3>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-4">
+              <img src="dish.svg" alt=""/>
+              <p style="font-weight: bold">Makanan enak</p>
+              <p>kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun,dengan makanan terbaik dan lezat di kota.</p>
+            </div>
+            <div class="col-lg-4">
+              <img src="pizza.svg" alt=""/>
+              <p style="font-weight: bold">Makanan cepat saji</p>
+              <p>kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun,dengan makanan terbaik dan lezat di kota.</p>
+            </div>
+            <div class="col-lg-4">
+              <img src="truck.svg" alt=""/>
+              <p style="font-weight: bold">Pesan Antar</p>
+              <p>kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun,dengan makanan terbaik dan lezat di kota.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
 
-    <!-- image card Start -->
     <section id="menu">
-      <section style="text-align : center;">
-          <div class="text-center">
-              <p>
-                  Spesial
-              </p>
-              <h1 style="position: static;" >Menu Minggu Ini</h1>
-          </div>
-      </section>
-          <div class="container">
-              <div class="row mt-5 gy-5">
-                  <div class="col-md-12 col-lg-4">
-                      <div class="card mb-5">
-                          <img src="/Images/plate1.png" alt="menu1"/>
-                          <div class="card-body">
-                              <h5 class="card-title">Salad BBQ</h5>
-                              <p class="card-text">
-                                  Delicious dish
-                              </p>
-                              <div class="harga row justify-content-between">
-                                  <div class="col-4">
-                                      <a href="#" class="btn btn-primary">Order</a>
-                                  </div>
-                                  <div class="col-4">
-                                      Rp. 20.000
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-12 col-lg-4">
-                      <div class="card mb-5">
-                          <img src="/Images/plate2.png" alt="menu2">
-                          <div class="card-body">
-                              <h5 class="card-title">Salad with Fish</h5>
-                              <p class="card-text">
-                                  Delicious dish 
-                              </p>
-                              <div class="harga row justify-content-between">
-                                  <div class="col-4">
-                                      <a href="#" class="btn btn-primary">Order</a>
-                                  </div>
-                                  <div class="col-4">
-                                      Rp. 50.000
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-12 col-lg-4">
-                      <div class="card mb-5">
-                          <img src="/Images/plate3.png" alt="menu3">
-                          <div class="card-body">
-                              <h5 class="card-title">Spinach Salad</h5>
-                              <p class="card-text">
-                                  Delicious dish
-                              </p>
-                              <div class="harga row justify-content-between">
-                                  <div class="col-4">
-                                      <a href="#" class="btn btn-primary">Order</a>
-                                  </div>
-                                  <div class="col-4">
-                                      Rp. 60.000
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+      <div class="container">
+        <div class="row mt-5 mb-3">
+            <div class="col text-center">
+                <p class="text-success" style="font-weight: bold;">Special</p>
+                <h3 style="font-weight: bold">Menu minggu ini</h3>
+            </div>
+        </div>
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-3 mb-3">
+                <div class="card shadow-sm" style="width: 16rem">
+                    <img src="plate1.png" class="card-img-top" alt=""/>
+                    <div class="card-body">
+                        <h4>Salad BBQ</h4>
+                        <p>Delicious dish</p>
+                        <h5>Rp.20.000</h5>
+                        <a href="#" class="btn btn-success" style="float: right;">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card shadow-sm" style="width: 16rem">
+                    <img src="plate2.png" class="card-img-top" alt=""/>
+                    <div class="card-body">
+                        <h4>Salad With Fish</h4>
+                        <p>Delicious dish</p>
+                        <h5>Rp.50.000</h5>
+                        <a href="#" class="btn btn-success" style="float: right;">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card shadow-sm" style="width: 16rem">
+                    <img src="plate3.png" class="card-img-top" alt=""/>
+                    <div class="card-body">
+                        <h4>Spinach Salad</h4>
+                        <p>Delicious dish</p>
+                        <h5>Rp.70.000</h5>
+                        <a href="#" class="btn btn-success" style="float: right;">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="aplikasi"> 
+      <div class="container">
+        <div class="row justify-content-evenly  mt-5">
+            <div class="col-lg-4 mb-3">
+                <img src="movil-app.png" alt="" width="400"/>
+            </div>
+            <div class="col-lg-4 mb-3 align-self-center">
+                <p class="text-success" style="font-weight: bold;">Aplikasi</p>
+                <h3 style="font-weight: bold">Aplikasi tersedia !</h3>
+                <p>temukan aplikasi kami dan unduh,Anda dapat membuat reservasi,memesan makanan,melihat pengiriman Anda dan banyak lagi</p>
+                <div class="row justify-content-start">
+                    <div class="col-3 me-3">
+                        <img src="app1.png" alt="" width="100" />
+                    </div>
+                    <div class="col-3 me-3">
+                        <img src="app2.png" alt="" width="100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="kontak">
+      <div class="container">
+          <div class="row mt-5">
+              <div class="col-md-8">
+                  <p class="text-success" style="font-weight: bold;">Let's talk</p>
+                  <h3 style="font-weight: bold">Kontak kami</h3>
+                  <p>jika Anda ingin memesan meja di restoran kami,hubungi kami dan kami akan segera melayani Anda, dengan layanan obrolan 24/7 kami.</p>
+              </div>
+              <div class="col-md align-self-center">
+                  <button type="button" class="btn btn-success">Kontak kami sekarang</button>
               </div>
           </div>
-      </section>
-      <!-- image card End -->
-  
-      <!-- Layanan Start  -->
-      <section id="layanan" style="text-align : center;">
-          <div class="text-center" >
-              <p>
-                  Penawaran
-              </p>
-              <h1>Our Amazing Services</h1>
-          </div>    
-          <div class="container">
-              <div class="bd-example bd-example-row bd-example-row-flex-cols">
-                  <div class="container">
-                      <div class="row align-items-start">
-                          <div class="col">
-                              <div class="bd-example">
-                                  <div class="" style="width: 18rem;">
-                                      <img src="/Images/dish.svg" alt="" style="margin-left: 100px;margin-top: 70px;">
-                                      <div class="" style="margin-bottom : 50px;">
-                                          <h5 class="card-title">makanan enak</h5>
-                                          <p class="card-text" style="text-align: center;">Kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun, dengan makanan terbaik dan lezat di kota</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col">
-                              <div class="bd-example">
-                                  <div class="" style="width: 18rem;">
-                                      <img src="/Images/pizza.svg" alt="" style="margin-left: 100px;margin-top: 70px;">
-                                      <div class="" style="margin-bottom : 50px;">
-                                          <h5 class="card-title">makanan cepat saji</h5>
-                                          <p class="card-text" style="text-align: center;">Kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun, dengan makanan terbaik dan lezat di kota</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col">
-                              <div class="bd-example">
-                                  <div class="" style="width: 18rem;">
-                                      <img src="/Images/truck.svg" alt="" style="margin-left: 100px;margin-top: 70px;">
-                                      <div class="" style="margin-bottom : 50px;">
-                                          <h5 class="card-title">Pesan Antar</h5>
-                                          <p class="card-text" style="text-align: center;">Kami menawarkan layanan berkualitas tinggi kepada klien kami selama bertahun-tahun, dengan makanan terbaik dan lezat di kota</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-      
-                      </div>
-                  </div>
-              </div>
-          </section>
-      <!-- Layanan End -->
-  
-      <!-- Contact Start -->
-      <section id="contact-me">
-          <div class="hero-banner container-fluid p-5 ">
-              <div class="row mt-5 gy-5">
-                  <div class="txt-home col-md-6">
-                      <p>
-                          Kontak Kami
-                      </p>
-                      <h1 >Let's Talk</h1>
-                      <p>
-                          Jika Anda ingin memesan meja di restoran kami,
-                          hubungi kami dan kami akan segera melayani Anda layanan obrolan 24/7 kami.
-                      </p>
-                  </div>
-                  <div class="col-md-6"></div>
-                  <div class="text-center">
-                      <button type="button" class="btn btn-primary text-white" onclick="window.location.href='#beranda'">Send Massage</button>
-                  </div>    
-              </div>
-          </div>
-      </section>
-      <!-- Contact End -->
-  
-      <!-- footer Start -->
-      <footer>
-          <div class="footer container-fluid bg-dark text-center text-white mt-5">
-              <div class="copyright">
-                <p style="font-size: small; color:#9b9b9b">© “20190140130 – Muhammad Anshori Akbar”. All Right Reserved</p>
-              </div>
-          </div>
-      </footer>
-      <!-- footer End -->
-  
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-      </script>
+      </div>
+   </section>
+
+   <footer>
+      <div class="text-center mt-5">
+        <p style="font-size: small; color:#9b9b9b">© “20190140130 – Muhammad Anshori Akbar”. All Right Reserved</p>
+      </div>
+    </footer>
+
+
   </body>
   
-  </html>
-
+</html>

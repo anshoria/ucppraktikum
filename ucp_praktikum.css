@@ -1,29 +1,7 @@
-@media (min-device-width: 481px) and (max-device-width: 1024px) {
-	#penawaran img {
-		padding-left: 80px;
-		padding-top: 30px;
-	}
-
-	#menu {
-		margin-left: 0px;
-	}
-}
-
-@media (min-width: 1025px) {
-	#penawaran img {
-		padding-left: 140px;
-		padding-top: 30px;
-	}
-
-	#menu {
-		margin-left: 0px;
-	}
-}
-
-body {
-	background-color: rgb(248, 255, 251);
-	color: rgb(31, 31, 31);
-	transition: 1s;
+body.darkmode {
+  background: rgb(57, 57, 57);
+  color: rgb(227, 227, 227);
+  transition: 1s;
 }
 
 .dark-mode {
@@ -32,46 +10,24 @@ body {
 	transition: 1s;
 }
 
-.dark-mode .card {
-	background-color: white;
-	color: black;
-}
-
 .light-mode {
 	background-color: rgb(248, 255, 251);
 	color: rgb(31, 31, 31);
 	transition: 1s;
 }
-
-.card p,
-h5 {
-	margin-left: 10px;
+.dark-mode .card {
+	background-color: white;
+	color: black;
 }
 
-.card img {
-	width: 150px;
-	margin-left: 50px;
-	margin-top: 25px;
+section{
+	padding-top: 2cm;
+	padding-bottom: 2cm;
 }
-
-.card a {
-	margin-left: 190px;
-}
-
-#menu {
-	margin-left: 80px;
-}
-
-section {
-	padding-top: 3rem;
-	padding-bottom: 18rem;
-}
-
-#penawaran img {
-	color: #198754;
-	padding-left: 140px;
-	padding-top: 30px;
-}
-
-
-
+#copyright {
+	clear: both;
+	text-align: center;
+	font-size: 80%;
+	color: #888;
+	padding-top: 15px;
+	background: transparent url(images/footerline.gif) 100% 0 no-repeat; }
