@@ -45,14 +45,12 @@ section {
 	padding-bottom: 18rem;
 }
 
-/* android */
 #penawaran img {
 	color: #198754;
 	padding-left: 140px;
 	padding-top: 30px;
 }
 
-/* ipad */
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
 	#penawaran img {
 		padding-left: 80px;
@@ -64,7 +62,6 @@ section {
 	}
 }
 
-/* destop */
 @media (min-width: 1025px) {
 	#penawaran img {
 		padding-left: 140px;
@@ -76,5 +73,3 @@ section {
 	}
 }
 
-
-/* <!-- @ copyright 2021 Muhammad Adana --> */
