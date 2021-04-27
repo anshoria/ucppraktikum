@@ -3,10 +3,12 @@
 }
 
 .hero-left{
+  float: left;
   width: 60%;
 }
 
 .hero-right{
+  float: right;
   margin: auto;
   width: 40%;
 }
