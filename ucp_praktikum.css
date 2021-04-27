@@ -1,4 +1,6 @@
-
+.navbar{
+  position: fixed;
+}
 
 .footer{
   height: 50px;
