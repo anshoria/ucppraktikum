@@ -39,11 +39,11 @@
       function darkmode() {
           var image = document.getElementById("dark");
           var element = document.body;
-          if (image.src.match("bulan.png")) {
-              image.src = "/images/light.svg";
+          if (image.src.match("dark")) {
+              image.src = "bulan.png";
               element.classList.toggle("dark-mode");
           } else {
-              image.src = "/images/dark.svg";
+              image.src = "Light.png";
               element.classList.toggle("light-mode");
           }
       }
