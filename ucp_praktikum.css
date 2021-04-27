@@ -1,9 +1,14 @@
 .hero-up{
   margin: auto;
 }
+
+.hero-left{
+  width: 60%;
+}
+
 .hero-right{
   margin: auto;
-
+  width: 40%;
 }
       
 .footer{
