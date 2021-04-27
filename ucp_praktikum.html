@@ -15,11 +15,6 @@
 
   <body>
 
-    <div id="them">
-      <div onclick="setDarkMode(true)" id="darkBtn" class=""> </div>
-			<div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> </div>
-		</div>
-
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -34,12 +29,25 @@
               <a class="nav-link" href="#layanan">Layanan</a>
               <a class="nav-link" href="#menu">Menu</a>
               <a class="nav-link" href="#kontak">Kontak Kami</a>
-              <button class="btn btn-link" onclick="myFunction()"><img src="bulan.jpg" alt="" style="width: 20px;height: 20px;"></button>
+              <img class="nav-item" src="bulan.png" alt="dark" id="dark" onclick="darkmode()">
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <script>
+      function darkmode() {
+          var image = document.getElementById("dark");
+          var element = document.body;
+          if (image.src.match("dark")) {
+              image.src = "/images/light.svg";
+              element.classList.toggle("dark-mode");
+          } else {
+              image.src = "/images/dark.svg";
+              element.classList.toggle("light-mode");
+          }
+      }
+    </script>
 
     <section id="beranda">
       <div class="container">
