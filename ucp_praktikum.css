@@ -27,10 +27,3 @@ section{
 	padding-top: 2cm;
 	padding-bottom: 2cm;
 }
-#copyright {
-	clear: both;
-	text-align: center;
-	font-size: 80%;
-	color: #888;
-	padding-top: 15px;
-	background: transparent url(images/footerline.gif) 100% 0 no-repeat; }
