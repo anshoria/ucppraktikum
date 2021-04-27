@@ -1,7 +1,7 @@
-body.darkmode {
-  background: rgb(57, 57, 57);
-  color: rgb(227, 227, 227);
-  transition: 1s;
+body {
+	background-color: rgb(248, 255, 251);
+	color: rgb(31, 31, 31);
+	transition: 1s;
 }
 
 .dark-mode {
@@ -10,14 +10,15 @@ body.darkmode {
 	transition: 1s;
 }
 
+.dark-mode .card {
+	background-color: white;
+	color: black;
+}
+
 .light-mode {
 	background-color: rgb(248, 255, 251);
 	color: rgb(31, 31, 31);
 	transition: 1s;
-}
-.dark-mode .card {
-	background-color: white;
-	color: black;
 }
 
 section{
